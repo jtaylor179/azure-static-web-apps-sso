@@ -13,7 +13,7 @@ env:
   RESOURCE_GROUP: 'rg-swa-sso'
   RESOURCE_TAGS: '{"owner":"jeff.taylor", "app":"azure-swa-sso", "repo":"https://github.com/jtaylor179/azure-static-web-apps-sso" }'
   APP_NAME: 'swa-sso'
-  LOCATION: 'eastus2
+  LOCATION: 'eastus2'
 
 jobs:
   deploy-infra:
