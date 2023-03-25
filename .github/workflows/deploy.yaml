@@ -36,6 +36,7 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: azure/CLI@v1
         with:
+          azcliversion: 2.31.0
           inlineScript: |
             az deployment group create \
               --resource-group ${{ env.RESOURCE_GROUP }} \
