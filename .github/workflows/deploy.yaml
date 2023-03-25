@@ -11,9 +11,9 @@ on:
 
 env:
   RESOURCE_GROUP: 'rg-swa-sso'
-  RESOURCE_TAGS: '{"owner":"rick.roche", "app":"azure-swa-sso", "repo":"https://github.com/rick-roche/azure-static-web-apps-sso" }'
+  RESOURCE_TAGS: '{"owner":"jeff.taylor", "app":"azure-swa-sso", "repo":"https://github.com/jtaylor179/azure-static-web-apps-sso" }'
   APP_NAME: 'swa-sso'
-  LOCATION: 'westeurope'
+  LOCATION: 'eastus2
 
 jobs:
   deploy-infra:
@@ -43,7 +43,7 @@ jobs:
               --parameters \
                   appName='${{ env.APP_NAME }}' \
                   location='${{ env.LOCATION }}' \
-                  repositoryUrl='https://github.com/rick-roche/azure-static-web-apps-sso' \
+                  repositoryUrl='https://github.com/jtaylor179/azure-static-web-apps-sso' \
                   repositoryToken='${{ secrets.WORKFLOW_TOKEN }}' \
                   tags='${{ env.RESOURCE_TAGS }}'
 
